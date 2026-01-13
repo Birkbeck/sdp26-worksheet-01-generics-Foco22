@@ -37,7 +37,7 @@ creating two different storage objects with two different type specialisations:
      ** The main reason is that both save different object, one is to save a object that is defined by its numbers and the balance, and the other is to save any string. The generic allow us to define very well that would be defined in the elements.**
    
    + What are the benefits?
-   
+    
      ** As it told, it can be very useful because depend of the type of the element that it want to save, you can have a a property element that save this, and well defined. It also useful the mistake will be shown before to complice the code, not after, saving time and solve it before **
 
 Add the following code to your `Example1` class:
@@ -103,11 +103,12 @@ with
 
    + Does it still compile? If not, explain why.
 
-     ** Not, it is still not compile, because  **
+     ** Not, it is still not compile, because account1 is still called as Object when you get the deposit, it need to stable as BankAccount, not object. **
 
    + How would you fix the error?
 
-     ** YOUR ANSWER HERE **
+     ** It can fixed using the         Storage<BankAccount> bankAccountStorage = new Storage<BankAccount>();
+        Storage<String> stringStorage = new Storage<String>(); and also save the account as BankAccount, not object **
 
 
 2. In Java, arrays are **covariant**, which means that an array of type `T1[]` can be used in a context where 
