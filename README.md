@@ -33,11 +33,11 @@ creating two different storage objects with two different type specialisations:
    ```
    + What are the reasons for using generics here?
    
-     ** YOUR ANSWER HERE **
+     ** The main reason is that both save different object, one is to save a object that is defined by its numbers and the balance, and the other is to save any string. The generic allow us to define very well that would be defined in the elements.**
    
    + What are the benefits?
    
-     ** YOUR ANSWER HERE **
+     ** As it told, it can be very useful because depend of the type of the element that it want to save, you can have a a property element that save this, and well defined. It also useful the mistake will be shown before to complice the code, not after, saving time and solve it before **
 
 Add the following code to your `Example1` class:
 
@@ -52,7 +52,8 @@ Add the following code to your `Example1` class:
    
    + What is the cause of the problems reported by the compiler, if any?
    
-     ** YOUR ANSWER HERE **
+     ** The problem is that it was defined that in the bankAccountStorage only will be BankAccount types, but the account was defined as Object, that it is the mistake**
+
 
 Now replace:
 
@@ -65,11 +66,11 @@ Now replace:
    ```
    + How does this affect the compilation process?
    
-     ** YOUR ANSWER HERE **
+     ** Yes, improve, it mean that one mistake was avoided, but there is a still mistake as when i got the item, the item of the bankAccountStorage should be a BankAccount, not Object, that is the problem. **
    
    + What is the problem, if any?
    
-     ** YOUR ANSWER HERE **
+     ** The problem is still with the second account, in the moment when we call it again, it can be identify that the account1 was a Object instead of BankAccount **
    
 Now replace 
 
@@ -85,7 +86,7 @@ with
 
    + Does it still compile?
 
-     ** YOUR ANSWER HERE **
+     ** Not, still do not compile **
 
 Finally, replace
 
@@ -101,7 +102,7 @@ with
 
    + Does it still compile? If not, explain why.
 
-     ** YOUR ANSWER HERE **
+     ** Not, it is still not compile, because  **
 
    + How would you fix the error?
 
